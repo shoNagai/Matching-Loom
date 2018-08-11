@@ -1,0 +1,36 @@
+.mat-h1 {
+  font-family: "Times New Roman";
+  font-style: italic;
+  color: palevioletred;
+}
+
+.grid-container {
+  margin: 5px;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+  .avatar {
+    width: 20em;
+    // height: 12em;
+  }
+}
+
+mat-card-actions {
+  display: flex;
+  flex-direction: row;
+}
