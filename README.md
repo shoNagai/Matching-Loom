@@ -1,27 +1,36 @@
-# BcHack
+# Matching-Loom
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
+## What is this dapps?
+Matching Loom is dapps like a Tinder App.
 
-## Development server
+- All swiped data will be saved on Dapp Chain.
+- You can see the tastes of matching partners. (transparent)
+- It works on the side chain of Loom.
+  - If you try to return token you got using fake photos back to the main chain, it will be challenged…….Not implemented🙇
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Why made?
+- Because of SNS using Dapp Chain(DPos is fast), we wanted to record Instant emotions.
+- We thought that it would be incentive to be swiped nice.
 
-## Code scaffolding
+# How to use
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## start loom chain
 
-## Build
+wget https://storage.googleapis.com/private.delegatecall.com/loom/osx/build-285/loom
+chmod +x loom
+./loom init
+./loom run
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## contract Development
+loom genkey -a public_key -k private_key
+truffle deploy --network loom_dapp_chain
 
-## Running unit tests
+## start
+npm install
+npm start
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Team member
+https://github.com/studioTeaTwo さん！
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+『DApps SNS Hackathon by Loom Network×GameWith』
+https://neutrino.connpass.com/event/94434/
