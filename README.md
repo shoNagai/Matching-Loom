@@ -15,19 +15,24 @@ Matching Loom is dapps like a Tinder App.
 # How to use
 
 ## start loom chain
-
+`
 wget https://storage.googleapis.com/private.delegatecall.com/loom/osx/build-285/loom
 chmod +x loom
 ./loom init
 ./loom run
+`
 
 ## contract Development
+`
 loom genkey -a public_key -k private_key
 truffle deploy --network loom_dapp_chain
+`
 
 ## start
+`
 npm install
 npm start
+`
 
 ## Team member
 https://github.com/studioTeaTwo さん！
